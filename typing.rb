@@ -1,6 +1,6 @@
-require 'dxruby'
+require "dxruby"
 require_relative "key.rb"
-require_relative 'font.rb'
+require_relative "font.rb"
 
 class Word
 	attr_accessor :japanese,:pronounce
