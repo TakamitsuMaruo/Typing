@@ -40,7 +40,7 @@ Window.loop do
 		Window.drawFont(0,font_height,word.pronounce[0...n],font,color: C_GREEN)
 		Window.drawFont(font.get_width(word.pronounce[0...n]),font_height,word.pronounce[n...word.pronounce.length],font,color: C_WHITE)
 		n += 1 if (Input.keys.shift == $key[word.pronounce[n].ord - 'A'.ord] || (word.pronounce[n] == "-" && Input.keys.shift == 12))
-		if (n == word.pronounce.length-1)
+		if (n == word.pronounce.length)
 			n = 0
 			word = words[rand(0...num)]
 			frame = 0
